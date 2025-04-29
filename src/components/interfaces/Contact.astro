@@ -1,0 +1,97 @@
+---
+import { ContactForm } from "../contact-form";
+import { Card, CardContent } from "../ui/card";
+---
+
+<section class="relative bg-[#2c2c34] py-32">
+    <div
+        class="absolute inset-0 z-0 h-full w-full bg-[linear-gradient(to_right,#222229_1px,transparent_1px),linear-gradient(to_bottom,#222229_1px,transparent_1px)] bg-[size:6rem_4rem]"
+    >
+    </div>
+    <div class="relative z-10container mx-auto">
+        <div class="text-center">
+            <h2 class="mb-3 text-5xl font-bold">Contacto</h2>
+            <p class="text-lg text-zinc-300 max-w-3xl text-balance mx-auto">
+                No pierdas tiempo, solicita una cotización online o llámanos a
+                nuestro número para recibir asesoría personalizada y soluciones
+                que elevarán la seguridad y productividad de tus proyectos.
+            </p>
+        </div>
+
+        <div class="mx-auto mt-24 grid max-w-screen-xl gap-4 md:grid-cols-2">
+            <Card className="h-full">
+                <CardContent className="p-6 h-full">
+                    <ContactForm client:idle />
+                </CardContent>
+            </Card>
+
+            <div class="flex flex-col gap-2 rounded-lg bg-accent p-2">
+                <Card
+                    className="relative flex h-full p-0 overflow-hidden group"
+                >
+                    <div
+                        class="absolute z-10 w-[55%] h-full scale-125 bg-white blur-lg group-hover:w-2/4 transition-all duration-500"
+                    >
+                    </div>
+                    <div class="absolute w-[55%] h-full right-0">
+                        <img
+                            alt="Placeholder 2"
+                            src="/pexels-andrew-2312369.jpg"
+                            class="object-cover h-full"
+                        />
+                    </div>
+                    <div
+                        class="relative z-10 flex h-full flex-col justify-between gap-6 p-6"
+                    >
+                        <p class="text-2xl">Email y Teléfono</p>
+                        <div class="flex flex-col">
+                            <a
+                                href="mailto:informacion@oaklandtaller.cl"
+                                class="hover:underline"
+                            >
+                                informacion@oaklandtaller.cl
+                            </a>
+                            <a
+                                href="tel:+569 89 55 8951"
+                                class="hover:underline"
+                            >
+                                +569 89 55 8951
+                            </a>
+                        </div>
+                    </div>
+                </Card>
+
+                <Card
+                    className="relative flex h-full p-0 overflow-hidden group"
+                >
+                    <div
+                        class="absolute z-10 w-[55%] h-full scale-125 bg-white blur-lg group-hover:w-2/4 transition-all duration-500"
+                    >
+                    </div>
+                    <div class="absolute w-[55%] h-full right-0">
+                        <img
+                            alt="Placeholder 2"
+                            src="/image.png"
+                            class="object-cover h-full"
+                        />
+                    </div>
+                    <div
+                        class="relative z-10 flex h-full flex-col justify-between gap-6 p-6"
+                    >
+                        <p class="text-2xl">Nuestras oficina</p>
+                        <div class="grid gap-8 md:grid-cols-2 md:gap-4">
+                            <div>
+                                <p
+                                    class="mb-2 text-xl text-muted-foreground md:mb-4"
+                                >
+                                    Coquimbo, Chile.
+                                </p>
+                                <p>Av. Los talleres #1621, Galpón 14</p>
+                            </div>
+                        </div>
+                    </div>
+                </Card>
+            </div>
+        </div>
+    </div>
+</section>
