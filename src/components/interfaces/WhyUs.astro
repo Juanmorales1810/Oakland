@@ -5,8 +5,8 @@ import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 ---
 
-<section class="py-32 bg-[#f0ba56]">
-    <div class="container mx-auto">
+<section id="Quienes-Somos" class="py-32 bg-[#f0ba56]">
+    <div class="container mx-auto px-2">
         <div class="flex flex-col items-center gap-6">
             <h2 class="mb-2 text-center text-3xl font-semibold lg:text-5xl">
                 ¿Por qué Oakland Services es tu mejor opción?
@@ -52,8 +52,12 @@ import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
                         className="flex flex-col gap-1.5 px-6 items-start"
                     >
                         <Badge variant="outline">
-                            Delivery de plataformas estandarizadas y
-                            herramientas especializadas
+                            Delivery de plataformas estandarizadas
+                            <span
+                                class="hidden sm:inline-block lg:hidden 2xl:inline-block"
+                            >
+                                y herramientas especializadas
+                            </span>
                         </Badge>
                     </CardHeader>
                     <CardContent className="px-6 text-lg lg:text-2xl">
