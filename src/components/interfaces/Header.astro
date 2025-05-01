@@ -1,14 +1,13 @@
 ---
 import { Phone } from "lucide-react";
 import { SheetMenu } from "../sheet-menu";
-import { Button } from "../ui/button";
 
 const routes = [
-    { name: "Home", href: "/#hero" },
-    { name: "Quienes somos", href: "/#Descriptions" },
-    { name: "Servicios", href: "/#Service" },
-    { name: "Misión y visión", href: "/#WhyUs" },
-    { name: "Contáctenos", href: "/#Reserva" },
+    { name: "Inicio", href: "/#Inicio" },
+    { name: "Quienes somos", href: "/#Quienes-Somos" },
+    { name: "Servicios", href: "/#Servicios" },
+    { name: "Misión y visión", href: "/#Mision-y-vision" },
+    { name: "Contáctenos", href: "/#Contacto" },
 ];
 ---
 
@@ -19,14 +18,14 @@ const routes = [
                 <a class="block text-zinc-600" href="/">
                     <span class="sr-only">Home</span>
                     <img
-                        src="/logo.png"
+                        src="/logo.jpg"
                         alt="Logo de Oakland Services"
                         class="h-12"
                     />
                 </a>
             </div>
 
-            <div class="hidden md:block">
+            <div class="hidden lg:block">
                 <nav aria-label="Global">
                     <ul class="flex items-center gap-6 text-sm">
                         {
@@ -50,12 +49,16 @@ const routes = [
                         target="_blank"
                         href="https://api.whatsapp.com/send?phone=56997364529&text=Hola%20quiero%20hacer%20una%20reserva.%20Que%20dias%20tenes%20disponibles%3F"
                     >
-                        Consulte ahora
-                        <Phone className="ml-2 h-4 w-4" />
+                        <span
+                            class="text-white font-bold text-sm hidden md:block"
+                        >
+                            Consulte ahora
+                        </span>
+                        <Phone className=" h-4 w-4 md:ml-2" />
                     </a>
                 </div>
 
-                <div class="block md:hidden">
+                <div class="block lg:hidden">
                     <SheetMenu client:visible />
                 </div>
             </div>
