@@ -1,5 +1,5 @@
 ---
-import { Button } from "../ui/button";
+import Button from "../ui/Button.astro";
 ---
 
 <section id="Inicio" class="relative font-sans lg:h-screen bg-[#a1c2b1]">
@@ -31,13 +31,12 @@ import { Button } from "../ui/button";
                     aseguramos un entorno de trabajo seguro.
                 </p>
                 <div class="mt-5 md:mt-10">
-                    <Button asChild variant="default">
-                        <a
-                            href="#contacto"
-                            class="block h-fit w-fit rounded-lg border-2 border-black bg-transparent px-4 py-2.5 text-lg leading-tight font-medium text-black transition duration-500 hover:scale-105 hover:bg-black hover:text-white md:px-8 md:py-5"
-                        >
-                            Contáctanos
-                        </a>
+                    <Button
+                        href="#contacto"
+                        variant="default"
+                        class={"block h-fit w-fit rounded-lg border-2 border-black bg-transparent px-4 py-2.5 text-lg leading-tight font-medium text-black transition hover:scale-105 hover:bg-black hover:text-white md:px-8 md:py-5"}
+                    >
+                        Contáctanos
                     </Button>
                 </div>
             </div>
