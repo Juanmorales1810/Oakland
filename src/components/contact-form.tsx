@@ -18,16 +18,16 @@ import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
     name: z.string().min(2, {
-        message: "Name must be at least 2 characters.",
+        message: "El nombre debe tener al menos 2 caracteres.",
     }),
     email: z.string().email({
-        message: "Please enter a valid email address.",
+        message: "El correo electrónico no es válido.",
     }),
     subject: z.string().min(5, {
-        message: "Subject must be at least 5 characters.",
+        message: "El asunto debe tener al menos 5 caracteres.",
     }),
     message: z.string().min(10, {
-        message: "Message must be at least 10 characters.",
+        message: "El mensaje debe tener al menos 10 caracteres.",
     }),
 });
 
@@ -63,9 +63,9 @@ export function ContactForm() {
                     name="name"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Name</FormLabel>
+                            <FormLabel>Nombre</FormLabel>
                             <FormControl>
-                                <Input placeholder="Your name" {...field} />
+                                <Input placeholder="Tu nombre" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -92,10 +92,10 @@ export function ContactForm() {
                     name="subject"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Subject</FormLabel>
+                            <FormLabel>Asunto</FormLabel>
                             <FormControl>
                                 <Input
-                                    placeholder="What is this regarding?"
+                                    placeholder="¿De qué se trata esto?"
                                     {...field}
                                 />
                             </FormControl>
@@ -108,10 +108,10 @@ export function ContactForm() {
                     name="message"
                     render={({ field }) => (
                         <FormItem className="flex-1 flex flex-col">
-                            <FormLabel>Message</FormLabel>
+                            <FormLabel>Mensaje</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Your message here..."
+                                    placeholder="Escribe tu mensaje aquí..."
                                     className="flex-1 min-h-[120px]"
                                     {...field}
                                 />
@@ -121,7 +121,7 @@ export function ContactForm() {
                     )}
                 />
                 <Button type="submit" className="w-full">
-                    Send Message
+                    Enviar Mensaje
                 </Button>
             </form>
         </Form>
