@@ -60,7 +60,12 @@ const routes = [
                 </div>
 
                 <div class="block lg:hidden">
-                    <SheetMenu client:visible />
+                    <SheetMenu
+                        title="Menu"
+                        description="Seleccione una opción"
+                        routes={routes}
+                        client:visible
+                    />
                 </div>
             </div>
         </div>
