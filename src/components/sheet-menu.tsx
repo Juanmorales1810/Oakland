@@ -33,11 +33,29 @@ export function SheetMenu() {
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>
-                    <SheetTitle>El Rinconcito</SheetTitle>
+                    <SheetTitle>
+                        <div className="flex items-center gap-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="size-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                ></path>
+                            </svg>
+                            Menu
+                        </div>
+                    </SheetTitle>
                     <SheetDescription></SheetDescription>
                 </SheetHeader>
                 <nav aria-label="Global">
-                    <ul className="flex flex-col items-start font-bold gap-6 text-xl">
+                    <ul className="flex flex-col items-start font-bold gap-6 ml-5 text-xl">
                         <li>
                             <a
                                 className="text-zinc-900 transition hover:text-zinc-900/75 font-semibold"
