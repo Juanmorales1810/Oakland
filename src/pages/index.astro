@@ -8,7 +8,15 @@ import Mision from "@/components/interfaces/Mision.astro";
 import Contact from "@/components/interfaces/Contact.astro";
 ---
 
-<Layout>
+<Layout
+    title="Oakland Services - Andamios y Herramientas Eléctricas en Arriendo y Venta"
+    description="Oakland Services es una empresa dedicada a la comercialización y arriendo de andamios y herramientas eléctricas. Nos preocupamos por la seguridad de nuestros trabajadores y clientes, ofreciendo productos de alta calidad y un servicio excepcional."
+    preload={[
+        { as: "image", href: "/logo.jpg", type: "image/jpeg" },
+        { as: "image", href: "/metadata.jpeg", type: "image/jpeg" },
+    ]}
+    canonical="https://oaklandservice.cl/"
+>
     <Hero />
     <Offer />
     <WhyUs />
