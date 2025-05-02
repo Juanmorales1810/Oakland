@@ -1,8 +1,8 @@
 ---
-import { ChevronRight, Headset, Truck } from "lucide-react";
+import { Headset, Truck } from "lucide-react";
 import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import Button from "../ui/Button.astro";
 ---
 
 <section id="Quienes-Somos" class="py-32 bg-[#f0ba56]">
@@ -36,7 +36,13 @@ import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
                         nuestra plataforma en línea.
                     </CardContent>
                     <CardFooter className="flex items-center px-6">
-                        <Button variant="outline">
+                        <Button
+                            size="sm"
+                            variant="outline"
+                            href="https://api.whatsapp.com/send?phone=56989558951&text=Hola,%20me%20interesa%20consultar%20sobre%20los%20servicios%20de%20Oakland%20Services.%20"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Contáctanos
                             <Headset className="ml-2 h-4 w-4" />
                         </Button>
@@ -68,7 +74,13 @@ import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
                         el momento justo.
                     </CardContent>
                     <CardFooter className="flex items-center px-6">
-                        <Button variant="outline">
+                        <Button
+                            size="sm"
+                            variant="outline"
+                            href="https://api.whatsapp.com/send?phone=56989558951&text=Hola,%20me%20interesa%20consultar%20sobre%20los%20servicios%20de%20Oakland%20Services.%20"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Contáctanos
                             <Truck className="ml-2 h-4 w-4" />
                         </Button>
