@@ -1,7 +1,7 @@
 ---
 import { Notebook, ScanHeart, Wrench } from "lucide-react";
-import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
+import Button from "../ui/Button.astro";
 ---
 
 <section class="relative bg-[#2c2c34] py-32">
@@ -35,7 +35,14 @@ import { Separator } from "../ui/separator";
                     en estandarizar trabajos de alto riesgo para minimizar
                     accidentes, incluyendo:
                 </p>
-                <Button> Contáctanos </Button>
+                <Button
+                    size="sm"
+                    href="https://api.whatsapp.com/send?phone=56989558951&text=Hola,%20me%20interesa%20consultar%20sobre%20los%20servicios%20de%20Oakland%20Services.%20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Contáctanos
+                </Button>
                 <Separator className="my-7" orientation="horizontal" />
                 <ul class="space-y-4 text-white">
                     <li class="flex items-center gap-3">
