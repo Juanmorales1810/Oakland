@@ -3,6 +3,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+    font-family: "migra";
+    src: url("/fonts/Migra-Extrabold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @theme inline {
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
@@ -39,7 +48,8 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
-    --font-sans-abril: var(--font-sans-abril);
+    --font-sans-montserrat: var(--font-sans-montserrat);
+    --font-sans-migra: var(--font-sans-migra);
 }
 
 :root {
@@ -75,7 +85,8 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
-    --font-sans-abril: Abril Fatface, serif;
+    --font-sans-montserrat: Montserrat, sans-serif;
+    --font-sans-migra: migra, sans-serif;
 }
 
 .dark {
@@ -118,5 +129,6 @@
     }
     body {
         @apply bg-background text-foreground;
+        @apply font-sans-montserrat;
     }
 }
